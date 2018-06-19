@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="https://use.fontawesome.com/e33ab33f7a.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>psm.promostile.it</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="col-md-12" style="margin-bottom:2%">
+        <div class="col-md-offset-1 col-md-3" style="margin-top:2%"></div>
+        <div class="col-md-4" style="text-align:center;margin-top:2%;font-size:40px">
+            <asp:LinkButton ForeColor="Green" OnClick="lnkPsm_Click" ID="lnkPsm" runat="server">PSM.IT</asp:LinkButton></div>
+        <div class="col-md-4" style="margin-top:2%;font-size:15px;"><asp:LinkButton ForeColor="Green" Visible="false" ID="btnLogOut" runat="server" OnClick="btnLogOut_Click"><span class="glyphicon glyphicon-log-out"></span>&nbsp Logout</asp:LinkButton></div>
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
